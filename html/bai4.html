@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: auto;
+            margin: 0% auto;
+        }
+        body{
+            background-color: wheat ;
+        }
+        .wrapper{
+            width: 1089px;
+            height: 900px;
+            box-sizing: border-box;
+            border: 1px black solid;
+        }
+        header{
+            width: 1089px;
+            height: 100px;
+            background-color: rgb(199, 120, 89);
+        }
+        nav{
+            width: 1089px;
+            height: 50px;        
+        }
+        .menu li{
+            list-style: none;
+            float: left;
+            display: inline-flex;
+            margin: 10px 20px;
+        }
+        li>a{
+            color: #99796c;
+            text-decoration: none;
+        }
+        .content{
+            width: 1089px;
+            height: 470px;
+        }
+        .c1{
+            width: 65%;
+            height: 470px;
+            float: left;
+        }
+        .c2{
+            width: 30%;
+            height: 470px;
+            float: left;
+            border-left: 1px rgb(23,22,22) solid;
+        }
+        footer{
+            width: 1089px;
+            height: 100px;
+        }
+        .img{
+            width: 1089px;
+            height: 200px;
+        }
+        .hd{
+            color: #7b7f02;
+            text-shadow: white 3px 3px 3px;
+        }
+        .c3{
+            width: 90px;
+            height: 40%;
+        }
+        ul.linkl>li{
+            margin-left: 120px;
+            color:#a34c1d;
+        }
+        .nut{
+            height: 35px;
+            width: 150px;
+            background-color: rgb(124,124,21);
+            border-radius: 5px;
+            border: none;
+            transition: white;
+        }
+        .nut:hover{
+            transform: scale(1.1);
+        }
+        .wrapper header{
+            height: 50px;
+        }
+        .floating-label {
+            position: absolute;
+            pointer-events: none;
+            left:0px;
+            top: 20px;
+            font-size:15px;
+            color:#B3BBCE;
+            transition: 0.2s ease all;
+            font-family: ;
+         }
+        .content{
+            display: flex;
+         }
+        .c1 {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+  
+        .email, .password, .name{
+            position:relative;
+            margin:20px 0;
+  
+        }
+        .inputText {
+  
+            font-size: 12px;
+            width:100%;
+            height:50px;
+            border:none;
+            border-bottom:1px solid #B3BBCE;
+            outline:none;
+            color: #9390A1;
+            font-weight:900;
+        }
+        .sub-menu li{
+            display: none;
+            position: relative;
+            height: 50px;
+            width: 200px;
+        }
+        .menu li:hover .sub-menu li {
+            display: block;
+        }
+        .menu li:hover{
+           background-color: rgb(132, 51, 51);
+        }
+        li:hover>a{
+            color: aliceblue;
+            font-style: italic;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="hd">
+                AUTUMN TRAVEL COMPANY
+            </h1>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="https://www.theluxurytravelagency.com/planning-your-autumn-holiday/">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Service                       
+                </a>
+                <ul class="sub-menu">
+                    <li><a href="">Our services</a></li>
+                    <li><a href="">Third party services</a></li>
+                </ul>
+            </li>
+            <li><a href="">Order</a></li>
+            </ul>
+        </nav>
+        <div class="img">
+            <img src="../img/Autumn.png" width="100%">
+        </div>
+        <div class="content">
+            <div class="c1">
+                <p style="font-size: x-large;color: #a68551;font-weight: bolder; ">Sign up for membership benefits</p>
+                <br>
+                <pre style="color: #a68551; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: italic;">
+                Our philosophical values are transparency, respect formality
+                and   responsibility.  Our  stimulus is   your  enthusiasm. Our 
+                motto is vour satisfaction.
+                </pre>
+            </div>
+        </div>
+        <div class="name">
+            <input type="text" class="inputText" required/>
+            <span class="floating-label">Username</span>
+          </div>
+        <div class="email">
+            <input type="text" class="inputText" required/>
+            <span class="floating-label">E-mail</span>
+          </div>
+          
+          <div class="password">
+            <input type="text" class="inputText" required/>
+            <span class="floating-label">Password</span>
+          </div>
+          
+          
+          <div class="password">
+            <input type="text" class="inputText" required/>
+            <span class="floating-label">Retype Password</span>
+          </div>
+          
+          <button class="nut">SIGN ME UP</button>
+        
+    </div>
+    <div class="c2">
+        <div class="c3">
+            <p style="margin-left: 30px;font-size: x-large;font-weight: bold;color: #68423a;">Links</p>
+            <ul class="link" >
+                <li>Make your Own Tour</li>
+                <li>Maldives Tours</li>
+                <li>Nature & Adventure</li>
+                <li>Readymade Tours</li>
+                <li>Europe Tours</li>
+                <li>Russia Tours</li>
+            </ul>
+        </div>
+        <div class="c4">
+            <p style="color: #633944; font-size: x-large;font-weight: bold;">More info</p>
+            <p style="margin: 20px;"><img src="../img/Autumn1.png" height="50px" style="border: 1px black solid; float: left;padding: 10px;">Our purpose is the client who gives to Us theopportunity to serve and to make known the reality around the world.
+            </p> 
+
+        </div>
+    </div>
+</div>
+<footer><img src="../img/Autumn2.jpg" alt="" width="100%" height="100%"></footer>
+    </div>
+</body>
+</html>

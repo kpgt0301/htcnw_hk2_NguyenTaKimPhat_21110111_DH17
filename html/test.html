@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        [class*="col-"]{
+            padding: 0px;
+            border: 1px solid gray;
+        }
+        li{ width: 150px;}
+    </style>
+</head>
+<script>
+    $(document).ready(function(){
+        $("#btnModal").click(function(){
+            $("#myModal").modal();
+        })
+
+        function kiemtraMa(){
+            var mauKT = /[0-9]{9}$/;
+            if(mauKT.test($("#txtMa").val()) == true){
+                alert("Bạn nhập đúng");
+            } else{
+                alert("Bạn nhập sai");
+            }
+        }
+        $("#txtMa").blur(kiemtraMa);
+
+        function kiemtraHT(){
+            var
+        }
+    })
+
+</script>
+<body>
+    <div class="container">
+        <input type="button" value="Hien" id="btnModal">
+        <div class="row">
+            <table class="table-bordered table-light table-primary table table-striped" id="tbDSV">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>MÃ</th>
+                        <th>HỌ TÊN</th>
+                        <th>ĐỊA CHỈ</th>
+                        <th>TIỀN DỊCH VỤ</th>
+                        <th>TIỀN ĐỒ DÙNG</th>
+                        <th>TIỀN GIAM</th>
+                        <th>THÀNH TIỀN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>123456789</td>
+                        <td>Tran Anh</td>
+                        <td>Quang Ngai</td>
+                        <td>30000</td>
+                        <td>10000</td>
+                        <td>30000</td>
+                        <td>70000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>     
+       <div class="row">
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>MODAL TITLE</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-control">
+                                <div class="row">
+                                    <div class="col-6 col-sm-3">
+                                        <label for="">Mã Khách hàng:</label>
+                                    </div>
+                                    <div class="col-6 col-sm-9">
+                                        <input type="text" id="txtTen" class="form-control" placeholder="Nhập họ tên">
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+       </div>  
+    </div>
+</body>
+</html>
